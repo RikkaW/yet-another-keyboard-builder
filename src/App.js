@@ -20,9 +20,9 @@ function App() {
   const [stabilizerCutoutType, setStabilizerCutoutType] = useState("mx-basic")
   const [acousticCutoutType, setAcousticCutoutType] = useState("none")
 
-  const [switchRadius, setSwitchRadius] = useState(0.5)
-  const [stabilizerRadius, setStabilizerRadius] = useState(0.5)
-  const [acousticRadius, setAcousticRadius] = useState(0.5)
+  const [switchRadius, setSwitchRadius] = useState(0.0)
+  const [stabilizerRadius, setStabilizerRadius] = useState(0.0)
+  const [acousticRadius, setAcousticRadius] = useState(0.0)
 
   const [unitWidth, setUnitWidth] = useState(19.05)
   const [unitHeight, setUnitHeight] = useState(19.05)
@@ -189,7 +189,7 @@ function App() {
                   step=".001"
                   min="0"
                   max="100"
-                  defaultValue="0.5"
+                  defaultValue="0.0"
                   id="switch-cutout-fillet-radius"
                   className="mb-4"
                   onChange={e => setSwitchRadius(e.target.value)}
@@ -201,7 +201,7 @@ function App() {
                   step=".001"
                   min="0"
                   max="100"
-                  defaultValue="0.5"
+                  defaultValue="0.0"
                   id="stabilizer-cutout-fillet-radius"
                   className="mb-4"
                   onChange={e => setStabilizerRadius(e.target.value)}
@@ -213,7 +213,7 @@ function App() {
                   step=".001"
                   min="0"
                   max="100"
-                  defaultValue="0.5"
+                  defaultValue="0.0"
                   id="acoustic-cutout-fillet-radius"
                   className="mb-4"
                   onChange={e => setAcousticRadius(e.target.value)}
